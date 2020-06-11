@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Miniguru</title>
+    <!-- custom css file -->
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- jquery functions -->
+    <script type="text/javascript" src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- popper.js
+    <script type="text/javascript" src="./node_modules/popper.js/dist/popper.min.js"></script> -->
+    <!-- bootstrap javascript -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Abel');
+
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+        }
+
+        .card {
+            width: 425px;
+            height: 250px;
+            background-color: #fff;
+            background: linear-gradient(#f8f8f8, #fff);
+            box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+            border-radius: 6px;
+            overflow: hidden;
+            position: relative;
+            margin: 1.5rem;
+        }
+
+        .card h1 {
+            text-align: center;
+        }
+
+        .card .additional {
+            position: absolute;
+            width: 150px;
+            height: 100%;
+            background: linear-gradient(#dE685E, #EE786E);
+            transition: width 0.4s;
+            overflow: hidden;
+            z-index: 2;
+        }
+
+        .card.green .additional {
+            background: linear-gradient(rgb(98, 233, 163), rgb(11, 238, 121));
+        }
+
+        .card:hover .additional {
+            width: 100%;
+            border-radius: 0 5px 5px 0;
+        }
+
+        .card .additional .user-card {
+            width: 150px;
+            height: 100%;
+            position: relative;
+            float: left;
+        }
+
+        .card .additional .user-card::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 10%;
+            right: -2px;
+            height: 80%;
+            border-left: 2px solid rgba(0, 0, 0, 0.025);
+        }
+
+        .card .additional .user-card .plan {
+            top: 15%;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 0.75em;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.15);
+            padding: 0.125rem 0.75rem;
+            border-radius: 100px;
+            white-space: nowrap;
+        }
+
+        .card .additional .more-info {
+            width: 300px;
+            float: left;
+            position: absolute;
+            left: 150px;
+            height: 100%;
+        }
+
+        .card .additional .more-info h1,
+        h5,
+        h6 {
+            color: #fff;
+            margin-bottom: 0;
+        }
+
+        .card.green .additional .more-info h1,
+        h5,
+        h6 {
+            color: #fff;
+            margin-bottom: 0;
+        }
+
+        .card .general {
+            width: 300px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+            box-sizing: border-box;
+            padding: 1rem;
+            padding-top: 0;
+        }
+
+        .card .general .more {
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            font-size: 0.9em;
+        }
+
+        .price {
+            color: #fff;
+        }
+
+        .checkout-container {
+            margin: 20px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-10 col-sm-6">
+                <div class="card" id="1">
+                    <div class="additional">
+                        <div class="user-card">
+                            <div class="plan center">Current Plan</div>
+                            <div class="center price">
+                                <h6>Rs.199/month</h6>
+                            </div>
+                        </div>
+                        <div class="more-info">
+                            <h1>Miniguru<br>Basic</h1>
+                            <div class="center">
+                                <h5>2 Days left for renewal<h5>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="general">
+                        <h1 class="plan">Miniguru<br>Basic</h1>
+                        <div class="center">Some text</div>
+                        <span class="more">Mouse over the card for more info</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-md-6">
+                <div class="card" id="2">
+                    <div class="additional">
+                        <div class="user-card">
+                            <div class="plan center">Quarterly Plan</div>
+                            <div class="center price">
+                                <h6>Rs.525/<br>3 months</h6>
+                            </div>
+                        </div>
+                        <div class="more-info">
+                            <h1>Miniguru<br>Plus</h1>
+                            <div class="center">
+                                <h5>Save 12%<h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="general">
+                        <h1 class="plan">Miniguru<br>Plus</h1>
+                        <div class="center">Some text</div>
+                        <span class="more">Mouse over the card for more info</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="card green" id="3">
+                    <div class="additional">
+                        <div class="user-card">
+                            <div class="plan center">Half Yearly Plan</div>
+                            <div class="center price">
+                                <h6>Rs.999/<br>6 months</h6>
+                            </div>
+                        </div>
+                        <div class="more-info">
+                            <h1>Miniguru<br>Pro</h1>
+                            <div class="center">
+                                <h5>Save 16%<h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="general">
+                        <h1 class="plan">Miniguru<br>Pro</h1>
+                        <div class="center">Some text</div>
+                        <span class="more">Mouse over the card for more info</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="card green" id="4">
+                    <div class="additional">
+                        <div class="user-card">
+                            <div class="plan center">Yearly Plan</div>
+                            <div class="center price">
+                                <h6>Rs.1900/year</h6>
+                            </div>
+                        </div>
+                        <div class="more-info">
+                            <h1>Miniguru<br>Pro Plus</h1>
+                            <div class="center">
+                                <h5>Save 20%<h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="general">
+                        <h1 class="plan">Miniguru<br>Pro Plus</h1>
+                        <div class="center">Some text</div>
+                        <span class="more">Mouse over the card for more info</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center" id="show-plan" style="display: none;">
+            <div class="col">
+                <div class="checkout-container text-center">
+                    <h3 id="selected-plan"></h3>
+                    <button class="btn btn-primary" id="checkout-btn">
+                        Checkout
+                        <span class="fa fa-arrow-right ml-auto"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        $(function () {
+            //card 1 is reserved for dispalying current plan of use
+            $(".card[id=1]")
+                .css('border-width', '5px')
+                .css('border-color', 'orange');
+
+            //make other 3 cards clickable
+            $('.card[id=2],.card[id=3],.card[id=4]').click(function () {
+                var card_id = $(this).attr('id');
+                $('.card[id=2],.card[id=3],.card[id=4]').css('border-width', '0px');
+                $(this).css('border-width', '4px')
+                    .css('border-color', 'aqua')
+                    .css('border-radius', '10px');
+
+                //get the name of selected plan
+                var selected_plan = $(this).find('.general h1').text();
+
+                //show selected plan details to proceed for checkout
+                $('#show-plan').show('2000');
+                $('#show-plan #selected-plan').text("Selected Plan: " + selected_plan);
+            })
+
+            //code for payment button
+            $('#checkout-btn').click(function(){
+                window.location.href='payment.html';
+                console.log('Proceed for payment');
+            })
+        })
+
+    </script>
+
+</body>
+
+</html>

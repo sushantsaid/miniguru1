@@ -1,0 +1,31 @@
+.avatar{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 2px;
+    margin:5px;
+    border: 2px blueviolet solid;
+    border-radius: 50%;
+    
+    object-fit: cover;
+  }
+
+  .avatar:hover{
+      border: 2px greenyellow solid;   
+  }
+
+  .logged-user {
+    display: flex;
+    align-items: center;
+    color: #495057;
+    margin-left: 15px;
+}
+
+.logged-user i {
+    display: block;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
