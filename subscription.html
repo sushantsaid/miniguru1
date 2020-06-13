@@ -151,117 +151,149 @@
 </head>
 
 <body>
+    <header>
+        <div style="height: 60px; background-color: aquamarine;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10">
+                        <a href="index.html" style="text-decoration: none;"><h3>Miniguru</h3></a>
+                    </div>
+                    <div class="col-2 header-right">
+                        <div class="dropdown">
+                            <a class="logged-user" style="text-decoration: none;" href="#" data-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src='./assets/images/user.jpg' class="avatar">
+                                <span style="align-self: center;">
+                                    <h5>Username</h5>
+                                </span>
+                                <i class="fa fa-angle-down ml-1" id="dropdownMenuProfile"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuProfile">
+                                <a class="dropdown-item" href="about.html">About</a>
+                                <a class="dropdown-item" href="subscription.html" id="subscription">Subscription</a>
+                                <a class="dropdown-item" href="help.html">Help</a>
+                                <a class="dropdown-item" href="home.html">Signout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-10 col-sm-6">
-                <div class="card" id="1">
-                    <div class="additional">
-                        <div class="user-card">
-                            <div class="plan center">Current Plan</div>
-                            <div class="center price">
-                                <h6>Rs.199/month</h6>
-                            </div>
-                        </div>
-                        <div class="more-info">
-                            <h1>Miniguru<br>Basic</h1>
-                            <div class="center">
-                                <h5>2 Days left for renewal<h5>
-                            </div>
-                        </div>
+    </header>
 
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-10 col-sm-6">
+                    <div class="card" id="1">
+                        <div class="additional">
+                            <div class="user-card">
+                                <div class="plan center">Current Plan</div>
+                                <div class="center price">
+                                    <h6>Rs.199/month</h6>
+                                </div>
+                            </div>
+                            <div class="more-info">
+                                <h1>Miniguru<br>Basic</h1>
+                                <div class="center">
+                                    <h5>2 Days left for renewal<h5>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="general">
+                            <h1 class="plan">Miniguru<br>Basic</h1>
+                            <div class="center">Some text</div>
+                            <span class="more">Mouse over the card for more info</span>
+                        </div>
                     </div>
-                    <div class="general">
-                        <h1 class="plan">Miniguru<br>Basic</h1>
-                        <div class="center">Some text</div>
-                        <span class="more">Mouse over the card for more info</span>
+                </div>
+                <div class="col-10 col-md-6">
+                    <div class="card" id="2">
+                        <div class="additional">
+                            <div class="user-card">
+                                <div class="plan center">Quarterly Plan</div>
+                                <div class="center price">
+                                    <h6>Rs.525/<br>3 months</h6>
+                                </div>
+                            </div>
+                            <div class="more-info">
+                                <h1>Miniguru<br>Plus</h1>
+                                <div class="center">
+                                    <h5>Save 12%<h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="general">
+                            <h1 class="plan">Miniguru<br>Plus</h1>
+                            <div class="center">Some text</div>
+                            <span class="more">Mouse over the card for more info</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-10 col-md-6">
-                <div class="card" id="2">
-                    <div class="additional">
-                        <div class="user-card">
-                            <div class="plan center">Quarterly Plan</div>
-                            <div class="center price">
-                                <h6>Rs.525/<br>3 months</h6>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="card green" id="3">
+                        <div class="additional">
+                            <div class="user-card">
+                                <div class="plan center">Half Yearly Plan</div>
+                                <div class="center price">
+                                    <h6>Rs.999/<br>6 months</h6>
+                                </div>
+                            </div>
+                            <div class="more-info">
+                                <h1>Miniguru<br>Pro</h1>
+                                <div class="center">
+                                    <h5>Save 16%<h5>
+                                </div>
                             </div>
                         </div>
-                        <div class="more-info">
-                            <h1>Miniguru<br>Plus</h1>
-                            <div class="center">
-                                <h5>Save 12%<h5>
-                            </div>
+                        <div class="general">
+                            <h1 class="plan">Miniguru<br>Pro</h1>
+                            <div class="center">Some text</div>
+                            <span class="more">Mouse over the card for more info</span>
                         </div>
                     </div>
-                    <div class="general">
-                        <h1 class="plan">Miniguru<br>Plus</h1>
-                        <div class="center">Some text</div>
-                        <span class="more">Mouse over the card for more info</span>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card green" id="4">
+                        <div class="additional">
+                            <div class="user-card">
+                                <div class="plan center">Yearly Plan</div>
+                                <div class="center price">
+                                    <h6>Rs.1900/year</h6>
+                                </div>
+                            </div>
+                            <div class="more-info">
+                                <h1>Miniguru<br>Pro Plus</h1>
+                                <div class="center">
+                                    <h5>Save 20%<h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="general">
+                            <h1 class="plan">Miniguru<br>Pro Plus</h1>
+                            <div class="center">Some text</div>
+                            <span class="more">Mouse over the card for more info</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center" id="show-plan" style="display: none;">
+                <div class="col">
+                    <div class="checkout-container text-center">
+                        <h3 id="selected-plan"></h3>
+                        <button class="btn btn-primary" id="checkout-btn">
+                            Checkout
+                            <span class="fa fa-arrow-right ml-auto"></span>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <div class="card green" id="3">
-                    <div class="additional">
-                        <div class="user-card">
-                            <div class="plan center">Half Yearly Plan</div>
-                            <div class="center price">
-                                <h6>Rs.999/<br>6 months</h6>
-                            </div>
-                        </div>
-                        <div class="more-info">
-                            <h1>Miniguru<br>Pro</h1>
-                            <div class="center">
-                                <h5>Save 16%<h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="general">
-                        <h1 class="plan">Miniguru<br>Pro</h1>
-                        <div class="center">Some text</div>
-                        <span class="more">Mouse over the card for more info</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6">
-                <div class="card green" id="4">
-                    <div class="additional">
-                        <div class="user-card">
-                            <div class="plan center">Yearly Plan</div>
-                            <div class="center price">
-                                <h6>Rs.1900/year</h6>
-                            </div>
-                        </div>
-                        <div class="more-info">
-                            <h1>Miniguru<br>Pro Plus</h1>
-                            <div class="center">
-                                <h5>Save 20%<h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="general">
-                        <h1 class="plan">Miniguru<br>Pro Plus</h1>
-                        <div class="center">Some text</div>
-                        <span class="more">Mouse over the card for more info</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row align-items-center" id="show-plan" style="display: none;">
-            <div class="col">
-                <div class="checkout-container text-center">
-                    <h3 id="selected-plan"></h3>
-                    <button class="btn btn-primary" id="checkout-btn">
-                        Checkout
-                        <span class="fa fa-arrow-right ml-auto"></span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
+    </main>
 
 
     <script>
@@ -289,8 +321,8 @@
             })
 
             //code for payment button
-            $('#checkout-btn').click(function(){
-                window.location.href='payment.html';
+            $('#checkout-btn').click(function () {
+                window.location.href = 'payment.html';
                 console.log('Proceed for payment');
             })
         })
